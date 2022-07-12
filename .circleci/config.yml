@@ -1,0 +1,17 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+    - image: debian
+    steps:
+    - run:
+        name: foo
+        command: echo foo ok
+
+workflows:
+  version: 2
+
+  ci:
+    jobs:
+    - build
