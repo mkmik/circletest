@@ -2,7 +2,7 @@
     "extends": [
        ":prHourlyLimit2",
        ":prConcurrentLimit10",
-       ":autodetectPinVersions",
+       ":autodetectPinVersions"
     ],
     "labels": [
         "dependencies"
