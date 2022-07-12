@@ -1,0 +1,24 @@
+{
+    "extends": [
+       ":prHourlyLimit2",
+       ":prConcurrentLimit10",
+       ":autodetectPinVersions",
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "includeForks": false,
+    "packageRules": [
+        {
+            "description": "Automerge trivial updates",
+            "matchUpdateTypes": [
+                "patch",
+                "digest",
+                "lockFileMaintenance"
+            ],
+            "addLabels": [
+                "automerge"
+            ]
+        }
+    ]
+}
