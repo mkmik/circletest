@@ -1,6 +1,7 @@
 {
     "extends": [
        ":dependencyDashboard",
+       ":pinDependencies",
        ":prHourlyLimit2",
        ":prConcurrentLimit10",
        ":autodetectPinVersions"
